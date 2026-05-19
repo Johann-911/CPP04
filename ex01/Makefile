@@ -1,7 +1,7 @@
 CPP = c++
 CXXFLAGS = -Wall -Wextra -Werror -std=c++11
 NAME = a.out
-SRCS = main.cpp Dog.cpp Cat.cpp Animal.cpp WrongAnimal.cpp WrongCat.cpp
+SRCS = main.cpp Dog.cpp Cat.cpp Animal.cpp WrongAnimal.cpp WrongCat.cpp Brain.cpp
 OBJS_DIR = objs
 OBJS = $(SRCS:%.cpp=$(OBJS_DIR)/%.o)
 RM = rm -f

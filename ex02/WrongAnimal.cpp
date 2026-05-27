@@ -1,18 +1,18 @@
-#include "Animal.hpp"
+#include "WrongAnimal.hpp"
 
-Animal::Animal()
+WrongAnimal::WrongAnimal()
 {
     std::cout << " Animal Default Constructor called" << std::endl;
 }
 
 //Copy
-Animal::Animal(const Animal &copy) : type(copy.type)
+WrongAnimal::WrongAnimal(const WrongAnimal &copy) : type(copy.type)
 {
     std::cout << " Animal Copy Constructor called" << std::endl;
 }
 
 //Copy assignment
-Animal &Animal::operator=(const Animal &copy)
+WrongAnimal &WrongAnimal::operator=(const WrongAnimal &copy)
 {
     if(this != &copy)
         type = copy.type;
@@ -21,17 +21,17 @@ Animal &Animal::operator=(const Animal &copy)
 }
 
 //Destructor
-Animal::~Animal()
+WrongAnimal::~WrongAnimal()
 {
     std::cout << " Animal Destrcutor called" << std::endl;
 }
 
-// void Animal::makeSound() const
-// {
-//     std::cout << " Animal makes Animal sound" << std::endl;
-// }
+void WrongAnimal::makeSound() const
+{
+    std::cout << " Animal makes Animal sound" << std::endl;
+}
 
-std::string Animal::getType() const 
+std::string WrongAnimal::getType() const 
 {
     return type;
 }
